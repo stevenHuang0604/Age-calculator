@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-box poppins-bold">
+        <div class="date day">
+          <label class="date__label date__label--day" for="day">Day</label>
+          <input class="date__input date__input--day poppins-bold" type="number" id="day" placeholder="DD" />
+          <div class="error error__empty--day poppins-regular-italic hidden">This field is required</div>
+          <div class="error error__invalid--day poppins-regular-italic hidden">Must be a valid day</div>
+          <div class="error error__empty--form poppins-regular-italic hidden">Must be a valid date</div>
+        </div>
+
+        <div class="date month">
+          <label class="date__label date__label--month" for="month">Month</label>
+          <input class="date__input date__input--month poppins-bold" type="number" id="month" placeholder="MM" />
+          <div class="error error__empty--month poppins-regular-italic hidden">This field is required</div>
+          <div class="error error__invalid--month poppins-regular-italic hidden">Must be a valid month</div>
+        </div>
+
+        <div class="date year">
+          <label class="date__label date__label--year" for="year">Year</label>
+          <input class="date__input date__input--year poppins-bold" type="number" id="year" placeholder="YYYY" />
+          <div class="error error__empty--year poppins-regular-italic hidden">This field is required</div>
+          <div class="error error__invalid--year poppins-regular-italic hidden">Must be a in past</div>
+        </div>
+        <button class="btn">
+          <img src="./assets/images/icon-arrow.svg" alt="arrow icon" />
+        </button>
+      </div>
+      <div class="display-box">
+        <div class="poppins-extrabold-italic"><span class="display__date display__date--year">- -</span> years</div>
+        <div class="poppins-extrabold-italic"><span class="display__date display__date--month">- -</span> months</div>
+        <div class="poppins-extrabold-italic"><span class="display__date display__date--day">- -</span> days</div>
+      </div>
+    </div>
+  </body>
+</html>
